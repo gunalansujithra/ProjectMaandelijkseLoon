@@ -14,6 +14,17 @@ namespace ProjectMaandelijkseLoon
         public string Rijksregisternummer { get; set; }
         public DateTime DatumIndiensttreding { get; set; }
         public string IBANNummer { get; set; }
+        public bool BedrijfsWagen { get; set; }
 
+        public Werknemer(string naam, string geslacht, DateTime geboorteDatum, string rijksregisternummer, DateTime datumIndiensttreding, string iBANNummer, bool bedrijfsWagen)
+        {
+            Naam = naam;
+            Geslacht = geslacht;
+            GeboorteDatum = geboorteDatum;
+            Rijksregisternummer = rijksregisternummer;
+            DatumIndiensttreding = datumIndiensttreding;
+            IBANNummer = iBANNummer;
+            BedrijfsWagen = bedrijfsWagen;
+        }
     }
 }
