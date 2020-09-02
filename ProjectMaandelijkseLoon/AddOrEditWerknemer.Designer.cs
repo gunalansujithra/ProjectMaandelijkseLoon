@@ -48,8 +48,22 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cbFuncties = new System.Windows.Forms.ComboBox();
             this.cbContractType = new System.Windows.Forms.ComboBox();
-            this.epAdd = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.epAdd)).BeginInit();
+            this.epNaam = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epGeslacht = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epGeboorte = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epRijks = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epIban = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epFunctie = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epContract = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cbBedrijfsWagen = new System.Windows.Forms.ComboBox();
+            this.lblBedrijfsWagen = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.epNaam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epGeslacht)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epGeboorte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epRijks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epIban)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epFunctie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epContract)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -167,17 +181,17 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(157, 462);
+            this.btnAdd.Location = new System.Drawing.Point(151, 520);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(117, 39);
             this.btnAdd.TabIndex = 20;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "Save";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(297, 462);
+            this.btnCancel.Location = new System.Drawing.Point(291, 520);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(117, 39);
             this.btnCancel.TabIndex = 21;
@@ -210,6 +224,7 @@
             this.cbFuncties.Name = "cbFuncties";
             this.cbFuncties.Size = new System.Drawing.Size(200, 24);
             this.cbFuncties.TabIndex = 24;
+            this.cbFuncties.SelectedIndexChanged += new System.EventHandler(this.cbFuncties_SelectedIndexChanged);
             // 
             // cbContractType
             // 
@@ -219,15 +234,58 @@
             this.cbContractType.Size = new System.Drawing.Size(200, 24);
             this.cbContractType.TabIndex = 25;
             // 
-            // epAdd
+            // epNaam
             // 
-            this.epAdd.ContainerControl = this;
+            this.epNaam.ContainerControl = this;
+            // 
+            // epGeslacht
+            // 
+            this.epGeslacht.ContainerControl = this;
+            // 
+            // epGeboorte
+            // 
+            this.epGeboorte.ContainerControl = this;
+            // 
+            // epRijks
+            // 
+            this.epRijks.ContainerControl = this;
+            // 
+            // epIban
+            // 
+            this.epIban.ContainerControl = this;
+            // 
+            // epFunctie
+            // 
+            this.epFunctie.ContainerControl = this;
+            // 
+            // epContract
+            // 
+            this.epContract.ContainerControl = this;
+            // 
+            // cbBedrijfsWagen
+            // 
+            this.cbBedrijfsWagen.FormattingEnabled = true;
+            this.cbBedrijfsWagen.Location = new System.Drawing.Point(293, 462);
+            this.cbBedrijfsWagen.Name = "cbBedrijfsWagen";
+            this.cbBedrijfsWagen.Size = new System.Drawing.Size(200, 24);
+            this.cbBedrijfsWagen.TabIndex = 27;
+            // 
+            // lblBedrijfsWagen
+            // 
+            this.lblBedrijfsWagen.AutoSize = true;
+            this.lblBedrijfsWagen.Location = new System.Drawing.Point(110, 465);
+            this.lblBedrijfsWagen.Name = "lblBedrijfsWagen";
+            this.lblBedrijfsWagen.Size = new System.Drawing.Size(100, 17);
+            this.lblBedrijfsWagen.TabIndex = 26;
+            this.lblBedrijfsWagen.Text = "BedrijfsWagen";
             // 
             // AddOrEditWerknemer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 549);
+            this.ClientSize = new System.Drawing.Size(667, 634);
+            this.Controls.Add(this.cbBedrijfsWagen);
+            this.Controls.Add(this.lblBedrijfsWagen);
             this.Controls.Add(this.cbContractType);
             this.Controls.Add(this.cbFuncties);
             this.Controls.Add(this.label8);
@@ -250,7 +308,13 @@
             this.Name = "AddOrEditWerknemer";
             this.Text = "AddOrEditWerknemer";
             this.Load += new System.EventHandler(this.AddOrEditWerknemer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.epAdd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epNaam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epGeslacht)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epGeboorte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epRijks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epIban)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epFunctie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epContract)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,6 +341,14 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbFuncties;
         private System.Windows.Forms.ComboBox cbContractType;
-        private System.Windows.Forms.ErrorProvider epAdd;
+        private System.Windows.Forms.ErrorProvider epNaam;
+        private System.Windows.Forms.ErrorProvider epGeslacht;
+        private System.Windows.Forms.ErrorProvider epGeboorte;
+        private System.Windows.Forms.ErrorProvider epRijks;
+        private System.Windows.Forms.ErrorProvider epIban;
+        private System.Windows.Forms.ErrorProvider epFunctie;
+        private System.Windows.Forms.ErrorProvider epContract;
+        private System.Windows.Forms.ComboBox cbBedrijfsWagen;
+        private System.Windows.Forms.Label lblBedrijfsWagen;
     }
 }

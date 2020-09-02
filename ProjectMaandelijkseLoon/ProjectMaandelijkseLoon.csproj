@@ -52,6 +52,7 @@
     <Compile Include="AddOrEditWerknemer.Designer.cs">
       <DependentUpon>AddOrEditWerknemer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Company.cs" />
     <Compile Include="CustomerSupport.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
