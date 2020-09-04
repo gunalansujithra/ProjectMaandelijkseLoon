@@ -61,7 +61,7 @@ namespace ProjectMaandelijkseLoon
                 epGeboorte.Clear();
             }
 
-            if (mtbRijksNummer.Text.Trim().Length < 15)
+            if (mtbRijksNummer.Text.Trim().Length < 12)
             {
                 epRijks.SetError(mtbRijksNummer, "Rijksregisternummer is niet ingevuld");
                 errorMessage += "\r\n" + "Rijksregisternummer is niet ingevuld";
@@ -106,7 +106,7 @@ namespace ProjectMaandelijkseLoon
             }
 
             if (txtNaam.Text.Trim().Length > 0 && isGeslacht && dtpGeboorte.Value.Date != DateTime.Now.Date
-                && mtbRijksNummer.Text.Trim().Length == 15 && mtbIban.Text.Trim().Length == 19
+                && mtbRijksNummer.Text.Trim().Length == 12 && mtbIban.Text.Trim().Length == 19
                 && cbFuncties.SelectedIndex >= 0 && cbContractType.SelectedIndex >= 0)
             {
                 string naam = txtNaam.Text.Trim();

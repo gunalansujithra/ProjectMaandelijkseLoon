@@ -18,25 +18,5 @@ namespace ProjectMaandelijkseLoon
 
         }
 
-        //public static double CalculateAnciënniteit()
-        //{
-        //    int experience = DateTime.Now.Year - DatumIndiensttreding.Year;
-        //    double anciënniteit = 0;
-        //    double salary = 0;
-
-
-        //    if (experience > 0)
-        //    {
-        //        salary = Startloon;
-        //        for (int i=0; i < experience; i++)
-        //        {
-        //            salary += salary * 0.01;
-        //        }
-
-        //        anciënniteit = salary - Startloon;
-        //    }
-
-        //    return anciënniteit;
-        //}
     }
 }

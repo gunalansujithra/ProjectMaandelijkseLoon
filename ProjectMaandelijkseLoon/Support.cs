@@ -8,8 +8,6 @@ namespace ProjectMaandelijkseLoon
 {
     public class Support : Werknemer
     {
-        public const double Startloon = 2050;
-
         public Support(string naam, string geslacht, DateTime geboorteDatum, string rijksregisternummer,
                     DateTime datumIndiensttreding, string iBANNummer, string functie, string contractType, 
                     bool bedrijfsWagen = false, double startLoon = 2050) 
@@ -17,6 +15,16 @@ namespace ProjectMaandelijkseLoon
                           functie, contractType, bedrijfsWagen, startLoon)
         {
 
+        }
+
+        public override double CalculateNetto()
+        {
+            double anciënniteit = CalculateAnciënniteit();
+            double heffing = CalculateBedrijfsvoorheffing();
+
+            double netto = StartLoon + anciënniteit - 200 - heffing + 50;
+
+            return netto;
         }
     }
 }

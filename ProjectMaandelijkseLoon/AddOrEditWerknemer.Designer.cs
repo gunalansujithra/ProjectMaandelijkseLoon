@@ -159,7 +159,7 @@
             // mtbRijksNummer
             // 
             this.mtbRijksNummer.Location = new System.Drawing.Point(291, 208);
-            this.mtbRijksNummer.Mask = "00.00.00-000.00";
+            this.mtbRijksNummer.Mask = "000000-00-00";
             this.mtbRijksNummer.Name = "mtbRijksNummer";
             this.mtbRijksNummer.Size = new System.Drawing.Size(200, 22);
             this.mtbRijksNummer.TabIndex = 17;

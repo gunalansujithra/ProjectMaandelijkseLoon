@@ -32,14 +32,14 @@
             this.btnAddWerknemer = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnView = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbWerknemer
             // 
             this.lbWerknemer.FormattingEnabled = true;
             this.lbWerknemer.ItemHeight = 16;
-            this.lbWerknemer.Location = new System.Drawing.Point(58, 58);
+            this.lbWerknemer.Location = new System.Drawing.Point(62, 123);
             this.lbWerknemer.Name = "lbWerknemer";
             this.lbWerknemer.Size = new System.Drawing.Size(199, 180);
             this.lbWerknemer.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // btnAddWerknemer
             // 
-            this.btnAddWerknemer.Location = new System.Drawing.Point(365, 79);
+            this.btnAddWerknemer.Location = new System.Drawing.Point(62, 59);
             this.btnAddWerknemer.Name = "btnAddWerknemer";
             this.btnAddWerknemer.Size = new System.Drawing.Size(192, 46);
             this.btnAddWerknemer.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(296, 179);
+            this.btnEdit.Location = new System.Drawing.Point(294, 196);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(92, 38);
             this.btnEdit.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(414, 179);
+            this.btnDelete.Location = new System.Drawing.Point(406, 196);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(92, 38);
             this.btnDelete.TabIndex = 3;
@@ -75,21 +75,22 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // label1
+            // btnView
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 271);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.btnView.Location = new System.Drawing.Point(62, 325);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(199, 62);
+            this.btnView.TabIndex = 5;
+            this.btnView.Text = "Maandelijkseloonfische alle werknemers";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAddWerknemer);
@@ -98,7 +99,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -108,7 +108,7 @@
         private System.Windows.Forms.Button btnAddWerknemer;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnView;
     }
 }
 
