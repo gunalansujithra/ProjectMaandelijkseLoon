@@ -11,7 +11,7 @@ namespace ProjectMaandelijkseLoon
         public List<Werknemer> WerknemerLijst = new List<Werknemer>();
 
         public void EditWerknemerLijst(int selectedIndex, string naam, string geslacht, DateTime geboorteDatum, string rijksregisternummer,
-                    DateTime datumIndiensttreding, string iBANNummer, string functie, string contractType, bool bedrijfsWagen)
+                    DateTime datumIndiensttreding, string iBANNummer, string functie, string contractType, bool bedrijfsWagen, double startLoon)
         {
             WerknemerLijst[selectedIndex].Naam = naam;
             WerknemerLijst[selectedIndex].Geslacht = geslacht;
@@ -22,6 +22,7 @@ namespace ProjectMaandelijkseLoon
             WerknemerLijst[selectedIndex].Functie = functie;
             WerknemerLijst[selectedIndex].ContractType = contractType;
             WerknemerLijst[selectedIndex].BedrijfsWagen = bedrijfsWagen;
+            WerknemerLijst[selectedIndex].StartLoon = startLoon;
         }
 
         public void DeleteWerknemer(int selectedIndex)

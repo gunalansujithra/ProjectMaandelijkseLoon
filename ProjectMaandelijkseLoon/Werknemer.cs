@@ -18,7 +18,7 @@ namespace ProjectMaandelijkseLoon
         public string Functie { get; set; }
         public string ContractType { get; set; }
         public double StartLoon { get; set; }
-
+        
         public Werknemer(string naam, string geslacht, DateTime geboorteDatum, string rijksregisternummer, DateTime datumIndiensttreding, string iBANNummer, string functie, string contractType, bool bedrijfsWagen = false, double startLoon = 1900)
         {
             Naam = naam;
@@ -30,7 +30,7 @@ namespace ProjectMaandelijkseLoon
             Functie = functie;
             ContractType = contractType;
             BedrijfsWagen = bedrijfsWagen;
-            StartLoon = contractType == "Voltijds" ? startLoon : Math.Round((startLoon / 38) * 25, 2);
+            StartLoon = contractType == "Voltijds" ? startLoon : Math.Round((startLoon / 38) * 25, 2);            
         }
 
         public override string ToString()
@@ -42,7 +42,7 @@ namespace ProjectMaandelijkseLoon
         {
             int experience = DateTime.Now.Year - DatumIndiensttreding.Year;
             double anciënniteit = 0;
-            double salary = 0;
+            double salary;
 
             if (experience > 0)
             {

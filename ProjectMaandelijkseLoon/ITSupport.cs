@@ -21,7 +21,7 @@ namespace ProjectMaandelijkseLoon
         {
             int experience = DateTime.Now.Year - DatumIndiensttreding.Year;
             double anciënniteit = 0;
-            double salary = 0;
+            double salary;
             double salITSupport = StartLoon - (StartLoon * 0.06);
 
             if (experience > 0)

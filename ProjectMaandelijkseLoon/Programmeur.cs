@@ -21,7 +21,7 @@ namespace ProjectMaandelijkseLoon
 
         public override double CalculateBedrijfsvoorheffing()
         {
-            double bedrijfsvoorheffing = 0;
+            double bedrijfsvoorheffing;
             double taxPercentage = BedrijfsWagen ? 0.173 : 0.1368;
             double anciënniteit = CalculateAnciënniteit();
 
